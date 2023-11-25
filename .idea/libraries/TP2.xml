@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TP2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ChatClient2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/ChatServer2.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
