@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08048d83-90e5-4c87-bac7-48a7adc34509" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/com/chat/programme/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/com/chat/programme/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurMenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauConfigServeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauConfigServeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPublic.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPublic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurMenuPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurMenuPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauChat.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/note_INF/sem_10/GUI"
+    "last_opened_file_path": "D:/note_INF/sem_10/real calculatrice"
   }
 }]]></component>
   <component name="RunManager" selected="Application.MainFrame">
