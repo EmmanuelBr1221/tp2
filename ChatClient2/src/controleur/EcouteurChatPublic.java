@@ -21,9 +21,38 @@ public class EcouteurChatPublic implements ActionListener {
     public EcouteurChatPublic(ClientChat clientChat, PanneauChat panneauChat) {
         this.clientChat = clientChat;
         this.panneauChat = panneauChat;
+        this.panneauChat.setEcouteur(this);
     }
+
+
+
     @Override
     public void actionPerformed(ActionEvent evt) {
-        //à compléter
+
+        Object source = evt.getSource();
+
+        if (source instanceof JTextField) {
+
+            JTextField texte = (JTextField) source;
+
+            String message = texte.getText(); // recupere  texte saisi
+
+            if (!message.isEmpty()) { // verifie si le texte est pas vide
+
+                // envoi du message au serveur
+                clientChat.envoyer("MSG " + message);
+
+
+                // ajout du message au panneau de chat
+                panneauChat.ajouter("MOI>>" + message);
+
+                // vide le champ de texte
+                texte.setText("");
+            }
+        }
+
+
+
+
     }
 }
