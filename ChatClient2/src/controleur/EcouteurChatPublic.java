@@ -21,10 +21,9 @@ public class EcouteurChatPublic implements ActionListener {
     public EcouteurChatPublic(ClientChat clientChat, PanneauChat panneauChat) {
         this.clientChat = clientChat;
         this.panneauChat = panneauChat;
+        this.panneauChat.setEcouteur(this);
     }
 
-
-// bay de classe interne
 
 
     @Override
@@ -40,40 +39,18 @@ public class EcouteurChatPublic implements ActionListener {
 
             if (!message.isEmpty()) { // verifie si le texte est pas vide
 
-                // Envoi du message au serveur
-         clientChat.envoyer("MSG " + message);
+                // envoi du message au serveur
+                clientChat.envoyer("MSG " + message);
 
 
-                // Ajout du message au panneau de chat
+                // ajout du message au panneau de chat
                 panneauChat.ajouter("MOI>>" + message);
 
-                // Vide le champ de texte
+                // vide le champ de texte
                 texte.setText("");
             }
         }
 
-
-
-
-
-
-
-        //à compléter
-
-
-        /*
-
-        //Creates textField
-JTextField input=new JTextField(20);
-input.addActionListener(new java.awt.event.ActionListener() {
-  public void actionPerformed(ActionEvent event) {
-    direction=input.getText();
-  }
-});
-
-
-
-         */
 
 
 

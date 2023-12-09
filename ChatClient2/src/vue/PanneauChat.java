@@ -16,12 +16,13 @@ public class PanneauChat extends JPanel {
     protected JTextField champDeSaisie;
 
     public PanneauChat() {
-        //setLayout(new BorderLayout());
+        this.setLayout(new BorderLayout());
         //à compléter.
 
         // zone de chat public
         JPanel zoneChatPublic =new JPanel();
 
+        zoneChat = new JTextArea(10, 40);
 
         zoneChat.setEditable(false);// Une zone de texte qui doit être non éditable
         zoneChatPublic.add(new JScrollPane(zoneChat));// barre de defilement
@@ -35,7 +36,7 @@ public class PanneauChat extends JPanel {
         JPanel leSaisie= new JPanel();
 
         champDeSaisie =new JTextField(50);
-        champDeSaisie.add(champDeSaisie,BorderLayout.SOUTH); // il contient le champ de saisie au sud;
+        leSaisie.add(champDeSaisie,BorderLayout.SOUTH); // il contient le champ de saisie au sud;
 
         leSaisie.add(champDeSaisie);
 

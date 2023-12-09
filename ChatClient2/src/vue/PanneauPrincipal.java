@@ -4,6 +4,7 @@ import com.chat.client.ClientChat;
 import controleur.EcouteurChatPrive;
 import controleur.EcouteurChatPublic;
 import controleur.EcouteurListeConnectes;
+import controleur.NouvelleClasseEcouteur;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,6 +13,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Vector;
 
+
+
 /**
  *
  * @author Abdelmoumène Toudeft (Abdelmoumene.Toudeft@etsmtl.ca)
@@ -19,15 +22,44 @@ import java.util.Vector;
  * @since 2023-11-01
  */
 public class PanneauPrincipal  extends JPanel {
-    private ClientChat clientChat;
-    private DefaultListModel<String> connectes;
-    private JList<String> jlConnectes;
-    private PanneauChat panneauChatPublic;
-    private PanneauInvitations panneauInvitations;
-    private JDesktopPane bureau;
-    private Map<String, PanneauChatPrive> panneauxPrives;
+    private final ClientChat clientChat;
+    private final DefaultListModel<String> connectes;
+    private final JList<String> jlConnectes;
+    private final PanneauChat panneauChatPublic;
+    private final PanneauInvitations panneauInvitations ;
+    private final JDesktopPane bureau;
+    private final Map<String, PanneauChatPrive> panneauxPrives;
+
+    private final PanneauChatPrive panneauChatPrive;
+
+
+//***********************  debut question 3.3 *************************************//
+   private final NouvelleClasseEcouteur nvClasseEcouteur;
+   private final PanneauInvitations panneauInvitations01;
+
+   private final ClientChat clientChat01;
+
+
+
+
 
     public PanneauPrincipal(ClientChat clientChat) {
+
+        panneauInvitations01 = new PanneauInvitations();
+
+        clientChat01 = new ClientChat();
+
+        this.nvClasseEcouteur = new NouvelleClasseEcouteur(panneauInvitations01,clientChat01);
+
+        panneauInvitations01.setEcouteur(nvClasseEcouteur);
+
+//******************** fin question 3.3 ****************************************//
+
+
+
+        panneauChatPrive =new PanneauChatPrive();
+
+
         this.clientChat = clientChat;
 
         panneauChatPublic = new PanneauChat();
@@ -115,6 +147,7 @@ public class PanneauPrincipal  extends JPanel {
         String message = alias+">>"+msg;
         System.out.println("PRIVÉ : "+alias+">>"+msg);
         //à compléter
+        this.panneauChatPrive.ajouter(message);//afficher le message privé dans le bon panneau de chat privé
     }
 
     public void inviteEchecs(String alias) {
