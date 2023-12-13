@@ -16,37 +16,35 @@ public class PanneauChat extends JPanel {
     protected JTextField champDeSaisie;
 
     public PanneauChat() {
+
         this.setLayout(new BorderLayout());
-        //à compléter.
 
-        // zone de chat public
-        JPanel zoneChatPublic =new JPanel();
-
-        zoneChat = new JTextArea(10, 40);
-
+        // Zone de chat public
+        zoneChat = new JTextArea();
         zoneChat.setEditable(false);// Une zone de texte qui doit être non éditable
-        zoneChatPublic.add(new JScrollPane(zoneChat));// barre de defilement
-        this.add(zoneChatPublic,BorderLayout.NORTH);
-        zoneChatPublic.setLayout(new FlowLayout(FlowLayout.CENTER));//il place la zone de chat dans un JScrollPane placé au centre;
+        JScrollPane scrollPane = new JScrollPane(zoneChat);// barre de defilement
+        this.add(scrollPane, BorderLayout.CENTER);//il place la zone de chat dans un JScrollPane placé au centre;
 
-        zoneChatPublic.add(zoneChat);
 
 
         //Champ de saisie
-        JPanel leSaisie= new JPanel();
+        champDeSaisie = new JTextField();
 
-        champDeSaisie =new JTextField(50);
-        leSaisie.add(champDeSaisie,BorderLayout.SOUTH); // il contient le champ de saisie au sud;
+        this.add(champDeSaisie, BorderLayout.SOUTH);// il contient le champ de saisie au sud;
 
-        leSaisie.add(champDeSaisie);
 
-       /* saisie.addActionListener(new ActionListener() {
+
+
+
+        champDeSaisie.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String texteSaisie = champDeSaisie.getText();
+                ajouter(texteSaisie);
             }
-        });
-*/
+        }
+        );
+
 
 
     }

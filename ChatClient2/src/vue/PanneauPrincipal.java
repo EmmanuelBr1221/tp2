@@ -33,25 +33,28 @@ public class PanneauPrincipal  extends JPanel {
     private final PanneauChatPrive panneauChatPrive;
 
 
-//***********************  debut question 3.3 *************************************//
-   private final NouvelleClasseEcouteur nvClasseEcouteur;
-   private final PanneauInvitations panneauInvitations01;
 
-   private final ClientChat clientChat01;
+
+
+
+
+
 
 
 
 
 
     public PanneauPrincipal(ClientChat clientChat) {
+//***********************  debut question 3.3 *************************************//
 
-        panneauInvitations01 = new PanneauInvitations();
+        panneauInvitations = new PanneauInvitations();
 
-        clientChat01 = new ClientChat();
 
-        this.nvClasseEcouteur = new NouvelleClasseEcouteur(panneauInvitations01,clientChat01);
+        NouvelleClasseEcouteur nvClasseEcouteur = new NouvelleClasseEcouteur(clientChat, panneauInvitations);
 
-        panneauInvitations01.setEcouteur(nvClasseEcouteur);
+        panneauInvitations.setEcouteur(nvClasseEcouteur);
+
+
 
 //******************** fin question 3.3 ****************************************//
 
@@ -68,7 +71,6 @@ public class PanneauPrincipal  extends JPanel {
         EcouteurChatPublic ecouteurChatPublic = new EcouteurChatPublic(clientChat, panneauChatPublic);
         panneauChatPublic.setEcouteur(ecouteurChatPublic);
 
-        panneauInvitations = new PanneauInvitations();
 
         panneauxPrives = new HashMap<>();
 
@@ -147,7 +149,12 @@ public class PanneauPrincipal  extends JPanel {
         String message = alias+">>"+msg;
         System.out.println("PRIVÉ : "+alias+">>"+msg);
         //à compléter
-        this.panneauChatPrive.ajouter(message);//afficher le message privé dans le bon panneau de chat privé
+
+        PanneauChatPrive lepanneauChatPrive = panneauxPrives.get(alias);
+        if(lepanneauChatPrive != null){
+            lepanneauChatPrive.ajouter(message);//afficher le message privé dans le bon panneau de chat privé
+        }
+
     }
 
     public void inviteEchecs(String alias) {

@@ -14,13 +14,15 @@ public class NouvelleClasseEcouteur extends JFrame implements ActionListener { /
     protected ClientChat clientChat;
 
 
-    public NouvelleClasseEcouteur(PanneauInvitations panneauInvitations, ClientChat clientChat) {
+    public NouvelleClasseEcouteur(ClientChat clientChat , PanneauInvitations panneauInvitations) {
 
-        this.panneauInvitations = panneauInvitations; // attribut panneau d’invitations
         this.clientChat = clientChat; // attribut client de chat
+        this.panneauInvitations = panneauInvitations; // attribut panneau d’invitations
+
 
 
     }
+
 
     
 
@@ -33,26 +35,25 @@ public class NouvelleClasseEcouteur extends JFrame implements ActionListener { /
 
             String commande = b.getActionCommand() ;
 
+            java.util.List<String> invitationsSelectionnees = panneauInvitations.getElementsSelectionnes();
+
+
             if (commande.equals("ACCEPTER")) {
+                // recupere les invitations  choisi
+                for (String invitation : invitationsSelectionnees) {
+                    panneauInvitations.ajouterInvitationRecue(invitation);
+                    clientChat.envoyer("JOIN" + invitation); // envoi au serveur commande JOIN pour chaque invitation chosi
 
-            // recupere les invitations choisi
-            java.util.List<String> invitationChosi = panneauInvitations.getElementsSelectionnes();
 
-            // envoi au serveur commande JOIN pour chaque invitation sélectionnée
-            for (String invitation : invitationChosi) {
-                clientChat.envoyer("JOIN" + invitation);
+                }
+            } else if (commande.equals("REFUSER")) {
+
+                // recupere les invitations pas choisi
+                for (String invitation : invitationsSelectionnees) {
+                    panneauInvitations.retirerInvitationRecue(invitation);
+                    clientChat.envoyer("DECLINE" + invitation);// envoi au serveur commande DECLINE pour chaque invitation pas chosi
+                }
             }
-
-        } else if (commande.equals("REFUSER")) {
-
-            // recupere les invitations pas choisi
-            java.util.List<String> invitationPasChoisi = panneauInvitations.getElementsSelectionnes();
-
-            // envoi au serveur commande DECLINE pour chaque invitation sélectionnée
-            for (String invitation : invitationPasChoisi) {
-                clientChat.envoyer("DECLINE" + invitation);
-            }
-        }
 
         this.panneauInvitations.vider(); // Retirer les invitations sélectionnées de la liste.
 
