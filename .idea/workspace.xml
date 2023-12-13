@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08048d83-90e5-4c87-bac7-48a7adc34509" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/NouvelleClasseEcouteur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPrive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPublic.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPublic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurListeConnectes.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurListeConnectes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChatPrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChatPrive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurChatPublic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurChatPublic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurListeConnectes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurListeConnectes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/com/chat/programme/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/com/chat/programme/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurMenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauConfigServeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauConfigServeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/com/chat/programme/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/com/chat/programme/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurChatPrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/controleur/EcouteurChatPrive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauChatPrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauChatPrive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/vue/PanneauPrincipal.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/note_INF/sem_10/GUI/src"
+    "last_opened_file_path": "C:/Users/Emmanuel Bruno/Desktop/TP2_TEEEESST"
   }
 }]]></component>
   <component name="RunManager" selected="Application.MainFrame">

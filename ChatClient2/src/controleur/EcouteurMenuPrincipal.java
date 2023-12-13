@@ -69,9 +69,9 @@ public class EcouteurMenuPrincipal implements ActionListener {
                             }
                         }
 
-                        else {
+                        else
                             recommencer = false;
-                        }
+
 
                     }while (recommencer);
                     break;
