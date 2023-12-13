@@ -28,8 +28,6 @@ public class EcouteurChatPrive extends EcouteurChatPublic {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
 
-        Object source02 = e.getSource();
-
         if (source instanceof JButton) {
 
             JButton d = (JButton) source;
@@ -48,9 +46,9 @@ public class EcouteurChatPrive extends EcouteurChatPublic {
 
         }
 
-        if (source02 instanceof JTextField){
+        if (source instanceof JTextField){
 
-            JTextField text = (JTextField) source02;
+            JTextField text = (JTextField) source;
 
             String leMessage = text.getText(); // recupere  texte saisi
 
@@ -65,7 +63,7 @@ public class EcouteurChatPrive extends EcouteurChatPublic {
                 clientChat.envoyer("ABANDON");// envoit au serveur command ABANDON
             }
             else{
-                clientChat.envoyer("PRV");
+                clientChat.envoyer("PRV" + leMessage);
             }
 
 

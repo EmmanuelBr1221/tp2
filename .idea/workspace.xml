@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08048d83-90e5-4c87-bac7-48a7adc34509" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/ChatClient2/com/chat/programme/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatClient2/com/chat/programme/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/EcouteurChatPrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/controleur/NouvelleClasseEcouteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/controleur/NouvelleClasseEcouteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChatPrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauChatPrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatClient2/src/vue/PanneauPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +39,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emmanuel Bruno/Desktop/TP2_TEEEESST&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/note_INF/sem_13/ca.ets.inf111_LH.facturationMVC_Solution/src"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.MainFrame">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chat.programme.Main" />

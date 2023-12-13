@@ -29,8 +29,8 @@ public class PanneauChatPrive extends PanneauChat {
         chatPrive.add(bRefuser);
 
         //ajouter au nord les 2 boutons
-        this.add(bAccepterOuInviter,BorderLayout.NORTH);
-        this.add(bRefuser,BorderLayout.NORTH);
+        this.add(chatPrive, BorderLayout.NORTH);
+
 
         //cacher le bouton qui sert à refuser une partie d’échecs.
         bRefuser.setVisible(false);
